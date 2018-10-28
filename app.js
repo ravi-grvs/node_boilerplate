@@ -6,7 +6,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const config = require('./config/config');
-
+const RedisCacheManager = require('./util/RedisCacheManager');
 
 /**
  * Middleware functions for CORS and ACAO.
@@ -31,7 +31,9 @@ app.get('/health',(req, res)=>{
         statusCode : 200, 
         message : "application is running"
     })
-})
+});
+
 app.use(config.version, addUserRoute);
+RedisCacheManager.loadRedisCacheManager();
 
 app.listen(config.PORT, () => console.log('running on port 8000'));

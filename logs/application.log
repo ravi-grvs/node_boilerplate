@@ -1,2 +1,3 @@
 {"message":"\"username\" is required","level":"error"}
 {"message":{"response":{"username":"user","email":"email@email.com"}},"level":"info"}
+{"message":{"response":{"username":"user","email":"email@email.com"}},"level":"info"}
