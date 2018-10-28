@@ -1,0 +1,32 @@
+{
+    "name": "node_boilerplate",
+    "version": "/v1",
+    "PORT":8000,
+    "LOG_CONFIG": {
+        "location": "./logs",
+        "fileLogConfig": {
+            "level": "info",
+            "filename": "application.log",
+            "maxsize": "5242880",
+            "maxFiles": "10",
+            "json": false
+        },
+        "accessLogConfig": {
+            "level": "info",
+            "filename": "access.log",
+            "maxsize": "5242880B",
+            "maxfiles": "10"
+        },
+        "consoleLogConfig": {
+            "level": "info",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        },
+        "enableConsoleLog":true
+    },
+    "REDIS_CONFIG": {
+        "HOST": "localhost",
+        "PORT": 6379
+    }
+}

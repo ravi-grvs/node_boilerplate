@@ -1,0 +1,6 @@
+{
+    "name":"node_boilerplate",
+    "version":"/v1",
+    "configLevel":"prod",
+    "PORT":8080
+}
